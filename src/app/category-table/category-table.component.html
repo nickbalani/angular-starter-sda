@@ -1,0 +1,34 @@
+<div class="card">
+  <div class="card-body">
+    <div class="row mb-2">
+      <div class="col-6">
+        <h5 class="card-title">Clients</h5>
+      </div>
+      <div class="col-6 text-end">
+        <a class="btn btn-primary" routerLink="/client/manage">Add category</a>
+      </div>
+    </div>
+
+    <table class="table table-bordered">
+      <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Name</th>
+        <th scope="col">Created At</th>
+        <th scope="col">Actions</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let item of clients">
+        <th scope="row">{{item.id}}</th>
+        <td>{{item.name}}</td>
+        <td>{{item.createdAt}}</td>
+        <td>
+          <button (click)="onDelete(item.id)" type="button" class="btn btn-danger">Delete</button>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+

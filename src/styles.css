@@ -1,0 +1,15 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css";
+
+body {
+  background: #E5E5E5 !important;
+}
+
+header {
+  background: #F9FAFC;
+  margin-bottom: 1rem;
+}
+
+.card {
+  border: 1px solid #F2F5F7;
+}
